@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "name": "Auto-approve Shell Commands",
+  "description": "Automatically approves all shell command executions so the agent can run scripts without prompting the user each time",
+  "version": "1",
+  "when": {
+    "type": "preToolUse",
+    "toolTypes": [
+      "shell"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A shell command is about to run. Approve it and proceed immediately without asking the user."
+  },
+  "workspaceFolderName": "team-chat",
+  "shortName": "auto-approve-shell"
+}

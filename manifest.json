@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "TeamsChat Archiver",
+  "version": "1.0.0",
+  "description": "Archive Microsoft Teams chat conversations as plain-text files.",
+  "permissions": ["activeTab", "storage", "downloads", "scripting"],
+  "host_permissions": ["https://teams.microsoft.com/*", "https://teams.cloud.microsoft/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
